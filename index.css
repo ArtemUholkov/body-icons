@@ -281,9 +281,9 @@ input#deslizador::-ms-tooltip {
 .first-first_line {
   position: absolute;
   width: 1px;
-  height: 44px;
+  height: 24px;
   background-color: #ffbf37;
-  top: -11px;
+  top: 14px;
   left: 101px;
 }
 .first-second_line {
@@ -292,7 +292,7 @@ input#deslizador::-ms-tooltip {
   height: 1px;
   background-color: #ffbf37;
   position: absolute;
-  top: -11px;
+  top: 14px;
   left: 101px;
 }
 .icon_wrapper {
@@ -325,8 +325,8 @@ input#deslizador::-ms-tooltip {
 }
 .first_icon_wrapper {
   position: absolute;
-  top: -50px;
-  left: 291px;
+  top: -30px;
+  left: 265px;
 }
 
 .wrap_this {
@@ -394,23 +394,23 @@ input#deslizador::-ms-tooltip {
   width: 30px;
 }
 .second-second_line {
-  height: 130px;
+  height: 110px;
   width: 1px;
   position: absolute;
-  top: -15px;
+  top: 5px;
   left: 20px;
 }
 .second-third_line {
   height: 1px;
-  width: 100px;
+  width: 130px;
   position: absolute;
-  top: -15px;
-  left: -80px;
+  top: 5px;
+  left: -110px;
 }
 .second_icon_wrapper {
   position: absolute;
-  top: -55px;
-  left: -135px;
+  top: -30px;
+  left: -170px;
 }
 .icon_text_wrapper_left {
   position: absolute;
@@ -450,23 +450,23 @@ input#deslizador::-ms-tooltip {
   width: 113px;
 }
 .third-second_line {
-  height: 49px;
+  height: 29px;
   width: 1px;
   position: absolute;
-  top: 153px;
+  top: 173px;
   left: 213px;
 }
 .third-third_line {
   height: 1px;
   width: 60px;
   position: absolute;
-  top: 153px;
+  top: 173px;
   left: 213px;
 }
 .third_icon_wrapper {
   position: absolute;
-  top: 113px;
-  left: 263px;
+  top: 130px;
+  left: 265px;
 }
 
 .third_icon {
@@ -527,15 +527,15 @@ input#deslizador::-ms-tooltip {
 }
 .fifth-third_line {
   height: 1px;
-  width: 40px;
+  width: 60px;
   position: absolute;
   top: 331px;
-  left: -93px;
+  left: -113px;
 }
 .fifth_icon_wrapper {
   position: absolute;
-  top: 295px;
-  left: -150px;
+  top: 290px;
+  left: -170px;
 }
 
 .fifth_icon {
@@ -560,7 +560,7 @@ input#deslizador::-ms-tooltip {
   width: 113px;
 }
 .sixth-second_line {
-  height: 70px;
+  height: 60px;
   width: 1px;
   position: absolute;
   top: 271px;
@@ -568,15 +568,15 @@ input#deslizador::-ms-tooltip {
 }
 .sixth-third_line {
   height: 1px;
-  width: 40px;
+  width: 50px;
   position: absolute;
-  top: 341px;
+  top: 331px;
   left: 223px;
 }
 .sixth_icon_wrapper {
   position: absolute;
-  top: 301px;
-  left: 263px;
+  top: 290px;
+  left: 265px;
 }
 
 .sixth_icon {
@@ -601,7 +601,7 @@ input#deslizador::-ms-tooltip {
   width: 50px;
 }
 .seventh-second_line {
-  height: 150px;
+  height: 200px;
   width: 1px;
   position: absolute;
   top: 291px;
@@ -609,15 +609,15 @@ input#deslizador::-ms-tooltip {
 }
 .seventh-third_line {
   height: 1px;
-  width: 120px;
+  width: 140px;
   position: absolute;
-  top: 441px;
-  left: -100px;
+  top: 491px;
+  left: -120px;
 }
 .seventh_icon_wrapper {
   position: absolute;
-  top: 400px;
-  left: -130px;
+  top: 450px;
+  left: -170px;
 }
 
 .seventh_icon {
@@ -642,7 +642,7 @@ input#deslizador::-ms-tooltip {
   width: 80px;
 }
 .eighth-second_line {
-  height: 90px;
+  height: 130px;
   width: 1px;
   position: absolute;
   top: 361px;
@@ -650,15 +650,15 @@ input#deslizador::-ms-tooltip {
 }
 .eighth-third_line {
   height: 1px;
-  width: 70px;
+  width: 90px;
   position: absolute;
-  top: 451px;
+  top: 491px;
   left: 191px;
 }
 .eighth_icon_wrapper {
   position: absolute;
-  top: 410px;
-  left: 231px;
+  top: 450px;
+  left: 265px;
 }
 
 .eighth_icon {
