@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body-icon</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="body-icon">
+      <div class="body_wrapper">
+        <div id="contenedor">
+          <figure>
+            <div id="separador"></div>
+          </figure>
+          <input
+            oninput="beforeAfter()"
+            onchange="beforeAfter()"
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            id="deslizador"
+          />
+        </div>
+        <span class="deco_circle first_circle"></span>
+        <span class="deco_line first-first_line"></span>
+        <span class="deco_line first-second_line"></span>
+        <div class="icon_wrapper first_icon_wrapper">
+          <img src="img/pills5.png" alt="" class="deco_icon first_icon" />
+          <div class="wrap_this">
+            <div class="icon_text_wrapper first_icon_text_wrapper icon_text_wrapper_right">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="deco_circle second_circle"></span>
+        <span class="deco_line second-first_line"></span>
+        <span class="deco_line second-second_line"></span>
+        <span class="deco_line second-third_line"></span>
+        <div class="icon_wrapper second_icon_wrapper">
+          <img src="img/pills1.png" alt="" class="deco_icon second_icon" />
+          <div class="wrap_this_left">
+            <div class="icon_text_wrapper icon_text_wrapper_left">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="deco_circle third_circle"></span>
+        <span class="deco_line third-first_line"></span>
+        <span class="deco_line third-second_line"></span>
+        <span class="deco_line third-third_line"></span>
+        <div class="icon_wrapper third_icon_wrapper">
+          <img src="img/pills6.png" alt="" class="deco_icon third_icon" />
+          <div class="wrap_this">
+            <div class="icon_text_wrapper first_icon_text_wrapper icon_text_wrapper_right">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="deco_circle fourth_circle"></span>
+        <span class="deco_line fourth-first_line"></span>
+        <div class="icon_wrapper fourth_icon_wrapper">
+          <img src="img/pills2.png" alt="" class="deco_icon fourth_icon" />
+          <div class="wrap_this_left">
+            <div class="icon_text_wrapper icon_text_wrapper_left">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="deco_circle fifth_circle"></span>
+        <span class="deco_line fifth-first_line"></span>
+        <span class="deco_line fifth-second_line"></span>
+        <span class="deco_line fifth-third_line"></span>
+        <div class="icon_wrapper fifth_icon_wrapper">
+          <img src="img/pills3.png" alt="" class="deco_icon fifth_icon" />
+          <div class="wrap_this_left">
+            <div class="icon_text_wrapper icon_text_wrapper_left">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="deco_circle sixth_circle"></span>
+        <span class="deco_line sixth-first_line"></span>
+        <span class="deco_line sixth-second_line"></span>
+        <span class="deco_line sixth-third_line"></span>
+        <div class="icon_wrapper sixth_icon_wrapper">
+          <img src="img/pills7.png" alt="" class="deco_icon sixth_icon" />
+          <div class="wrap_this">
+            <div class="icon_text_wrapper first_icon_text_wrapper icon_text_wrapper_right">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="deco_circle seventh_circle"></span>
+        <span class="deco_line seventh-first_line"></span>
+        <span class="deco_line seventh-second_line"></span>
+        <span class="deco_line seventh-third_line"></span>
+        <div class="icon_wrapper seventh_icon_wrapper">
+          <img src="img/pills4.png" alt="" class="deco_icon seventh_icon" />
+          <div class="wrap_this_left">
+            <div class="icon_text_wrapper icon_text_wrapper_left">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+
+        <span class="deco_circle eighth_circle"></span>
+        <span class="deco_line eighth-first_line"></span>
+        <span class="deco_line eighth-second_line"></span>
+        <span class="deco_line eighth-third_line"></span>
+        <div class="icon_wrapper eighth_icon_wrapper">
+          <img src="img/pills8.png" alt="" class="deco_icon eighth_icon" />
+          <div class="wrap_this">
+            <div class="icon_text_wrapper first_icon_text_wrapper icon_text_wrapper_right">
+              <p class="icont_text_title">Tablets</p>
+              <p class="icon_text_text">Improvement in mood, energy and sense of well-being</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function beforeAfter() {
+      document.getElementById('separador').style.width =
+        document.getElementById('deslizador').value + '%';
+    }
+
+    let icon = document.querySelectorAll('.icon_wrapper');
+    icon.forEach((item) => {
+      item.addEventListener('click', () => {
+        item.classList.toggle('icon_wrapper_active');
+      });
+    });
+  </script>
+</html>
+<style></style>
