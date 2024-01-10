@@ -224,7 +224,7 @@ input#deslizador::-ms-tooltip {
 
 /*flechas*/
 #separador::before {
-  background: url(../img/Vector1.png) no-repeat scroll 0 80% transparent;
+  background: url('https://i.ibb.co/X7WM8tZ/Vector1.png') no-repeat scroll 0 80% transparent;
   background-size: contain;
   content: ' ';
   float: right;
