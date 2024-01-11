@@ -702,3 +702,122 @@ input#deslizador::-ms-tooltip {
   opacity: 1;
   transition: all 0.3s;
 }
+.pclogo {
+  display: block;
+}
+.moblogo {
+  display: none;
+}
+.caption_on_circleclick {
+  display: none;
+  opacity: 1;
+}
+@media (max-width: 1100px) {
+  .wrap_this {
+    top: 58px;
+    left: -110px;
+
+    z-index: 15;
+  }
+  .icon_wrapper {
+    z-index: 99;
+  }
+  .icon_text_wrapper {
+    background: white;
+    z-index: 15;
+  }
+  .wrap_this_left {
+    top: 54px;
+    right: -118px;
+  }
+  .deco_icon {
+    z-index: 16;
+  }
+}
+@media (max-width: 760px) {
+  .deco_line {
+    display: none;
+  }
+  .icon_wrapper {
+    display: none;
+  }
+  .pclogo {
+    display: none;
+  }
+  .moblogo {
+    display: block;
+    max-width: 360px;
+  }
+  .deco_circle {
+    width: 38px;
+    height: 38px;
+  }
+  .fifth_circle {
+    left: 38px;
+  }
+  .fourth_circle {
+    top: 140px;
+  }
+  .caption_on_circleclick {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100svh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(75, 75, 75, 0.526);
+    display: none;
+    opacity: 0;
+  }
+  .mob_tablets_one {
+    padding: 10px 10px 10px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 10px;
+    border: 0.5px solid #ffbf37;
+    background: #fff;
+    position: relative;
+    max-width: 290px;
+  }
+  .mob_tablets_title {
+    color: #010101;
+    font-family: 'Work Sans';
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .mob_tablets_text {
+    color: #010101;
+    font-family: 'Work Sans';
+    font-size: 18px;
+    font-weight: 300;
+  }
+  .tablets_mob_image {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: -30px;
+    right: -30px;
+  }
+  .mob_one,
+  .mob_eight,
+  .mob_five,
+  .mob_four,
+  .mob_two,
+  .mob_three,
+  .mob_six,
+  .mob_seven {
+    display: none;
+  }
+  .apear_caption {
+    display: flex;
+  }
+  .make_visual_caption {
+    opacity: 1;
+    transition: all 0.3s;
+  }
+}

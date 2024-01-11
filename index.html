@@ -8,7 +8,8 @@
   </head>
   <body>
     <section class="body-icon">
-      <img src="img/logo.png" alt="logo" class="body_icon_imgbg" />
+      <img src="img/logo.png" alt="logo" class="body_icon_imgbg pclogo" />
+      <img src="img/moblogo.png" alt="logo" class="body_icon_imgbg moblogo" />
       <div class="body_wrapper">
         <div id="contenedor">
           <figure>
@@ -134,6 +135,48 @@
         </div>
       </div>
     </section>
+    <div class="caption_on_circleclick">
+      <div class="mob_tablets_one mob_one">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob1.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+      <div class="mob_tablets_one mob_two">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob2.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+      <div class="mob_tablets_one mob_three">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob3.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+      <div class="mob_tablets_one mob_four">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob4.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+      <div class="mob_tablets_one mob_five">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob5.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+      <div class="mob_tablets_one mob_six">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob6.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+      <div class="mob_tablets_one mob_seven">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob7.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+      <div class="mob_tablets_one mob_eight">
+        <p class="mob_tablets_title">Tablets</p>
+        <p class="mob_tablets_text">Improvement in mood, energy and sense of well-being</p>
+        <img src="img/mob8.png" class="tablets_mob_image" alt="tablets" />
+      </div>
+    </div>
   </body>
   <script>
     function beforeAfter() {
@@ -313,6 +356,48 @@
         iconEight.classList.add('body_show_item');
       }, 1850);
     }, 1000);
+
+    let allCircles = document.querySelectorAll('.deco_circle');
+    let caption = document.querySelector('.caption_on_circleclick');
+    let mobOne = document.querySelector('.mob_one');
+    let allCaptionContents = document.querySelectorAll('.mob_tablets_one');
+
+    caption.addEventListener('click', (e) => {
+      if (e.target.classList.contains('caption_on_circleclick') == true) {
+        caption.classList.remove('make_visual_caption');
+        caption.classList.remove('apear_caption');
+        allCaptionContents.forEach((item) => {
+          item.classList.remove('apear_caption');
+        });
+      }
+    });
+
+    allCircles.forEach((item) => {
+      item.addEventListener('click', (e) => {
+        caption.classList.add('apear_caption');
+        setTimeout(() => {
+          caption.classList.add('make_visual_caption');
+        }, 10);
+        console.log(e.target);
+        if (e.target.classList.contains('first_circle')) {
+          document.querySelector('.mob_one').classList.add('apear_caption');
+        } else if (e.target.classList.contains('second_circle')) {
+          document.querySelector('.mob_two').classList.add('apear_caption');
+        } else if (e.target.classList.contains('third_circle')) {
+          document.querySelector('.mob_three').classList.add('apear_caption');
+        } else if (e.target.classList.contains('fourth_circle')) {
+          document.querySelector('.mob_four').classList.add('apear_caption');
+        } else if (e.target.classList.contains('fifth_circle')) {
+          document.querySelector('.mob_five').classList.add('apear_caption');
+        } else if (e.target.classList.contains('sixth_circle')) {
+          document.querySelector('.mob_six').classList.add('apear_caption');
+        } else if (e.target.classList.contains('seventh_circle')) {
+          document.querySelector('.mob_seven').classList.add('apear_caption');
+        } else if (e.target.classList.contains('eighth_circle')) {
+          document.querySelector('.mob_eight').classList.add('apear_caption');
+        }
+      });
+    });
   </script>
 </html>
 <style></style>
