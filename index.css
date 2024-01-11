@@ -116,6 +116,24 @@ table {
   border-spacing: 0;
 }
 
+.body-icon {
+  width: 100%;
+  position: relative;
+}
+.body_icon_imgbg {
+  position: absolute;
+  max-width: 737px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 737px;
+}
 .body_wrapper {
   width: 175.443px;
   height: 569.62px;
@@ -268,15 +286,19 @@ input#deslizador::-ms-tooltip {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
 }
 .first_circle {
   top: 33px;
   left: 90px;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .deco_line {
   width: 1px;
   height: 44px;
   background-color: #ffbf37;
+  opacity: 0;
 }
 .first-first_line {
   position: absolute;
@@ -285,6 +307,8 @@ input#deslizador::-ms-tooltip {
   background-color: #ffbf37;
   top: 14px;
   left: 101px;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .first-second_line {
   position: absolute;
@@ -294,8 +318,11 @@ input#deslizador::-ms-tooltip {
   position: absolute;
   top: 14px;
   left: 101px;
+  opacity: 0;
+  transition: all 0.3s;
 }
 .icon_wrapper {
+  opacity: 0;
   width: 80px;
   height: 80px;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.15);
@@ -327,6 +354,8 @@ input#deslizador::-ms-tooltip {
   position: absolute;
   top: -30px;
   left: 265px;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 .wrap_this {
@@ -667,5 +696,9 @@ input#deslizador::-ms-tooltip {
 }
 .icon_wrapper_active .eighth_icon {
   height: 18px;
+  transition: all 0.3s;
+}
+.body_show_item {
+  opacity: 1;
   transition: all 0.3s;
 }
